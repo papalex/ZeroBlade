@@ -26,14 +26,14 @@
     curdate = new Date();
     var month = curdate.getMonth();
     year = curdate.getFullYear();
-    var firstdayofmonth = new Date(year,month+1,1);//curdate
+    var firstdayofmonth = new Date(year,month+1,1);/*curdate
     //firstdayofmonth.setMonth(month);
-    //firstdayofmonth.setDate(1);
+    //firstdayofmonth.setDate(1);*/
     lastdayofmont = new Date(year,month+1,0);
-    //lastdayofmont.setMonth(month+1);
-    //lastdayofmont.setDate(0);
-    prevmonth = new Date(year,month,0);//new Date(firstdayofmonth);
-    //prevmonth.setDate(0);
+    /*lastdayofmont.setMonth(month+1);
+    //lastdayofmont.setDate(0);*/
+    prevmonth = new Date(year,month,0);/*new Date(firstdayofmonth);
+    prevmonth.setDate(0);*/
     prevmonthlastdate = prevmonth.getDate();
     daysqty = lastdayofmont.getDate();
 
@@ -43,11 +43,12 @@
 
         if (i < 0)
         {
-            //innerDate = new Date(prevmonth);
-            //prevmonth.setDate prevmonth.getDate();
-            //innerDate.setDate(prevmonthlastdate  +i+1);
+            /*innerDate = new Date(prevmonth);
+            prevmonth.setDate prevmonth.getDate();
+            innerDate.setDate(prevmonthlastdate  +i+1);
+            */
             li.innerHTML = prevmonthlastdate  +i+1;
-            li.innerHTML += '<div>'+montharr[month-1]+'</div>';//innerDate.toDateString('MMM')
+            li.innerHTML += '<div>'+montharr[month-1]+'</div>';/*innerDate.toDateString('MMM')*/
             li.classList.add('inprogress');
         }
         else if (i >= daysqty)
