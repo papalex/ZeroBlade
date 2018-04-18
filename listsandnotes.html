@@ -1,0 +1,229 @@
+
+<div>
+	<style>.inprogress{font-style: italic; color: darkgray; background-color: lightgoldenrodyellow}.iscomplete{background: lightgreen;}
+		.deffered{color:rosybrown;background-color: lightgray;}
+		.deffered::after{content: '--отложено--';color: red;}
+		.monstrouse{color:lightgreen;background-color: blueviolet;}
+		.monstrouse::after{content: '   !!!--используется в SQL->PHP функциях!!!--';color: red;}
+
+		.notes{list-style: none;margin: 2vw;background-color: lightcyan;display: flex;flex-wrap:wrap;}
+		.notes > li{box-sizing: border-box;-moz-box-sizing: border-box;margin: 1vw; background-color: #DDDD50;padding: 1%;}
+		.calendar{width:50vw;list-style: none; margin: 0vw;background-color: lightcyan;display: flex;flex-wrap:wrap;}
+		.calendar > li{border: 1px solid #b2b2b2; width:14%; height: 10vh;box-sizing: border-box;-moz-box-sizing: border-box;margin: 0vw; background-color: #DDDD50;padding: 1%;}
+		.calendarhead > li{height: auto;background-color: #CCCC50; font-weight: bold;}
+
+	</style>
+	<ol>
+		<li class="iscomplete">Report - используется модулем <b>report</b></li>
+		<li class="deffered">Source_reclama_type - используется в модуле report</li>
+		<li class="deffered">Source_reclama - используется в модуле report</li>
+		<li class="iscomplete monstrouse"><details><summary>Document_type - используется модулями <b>document и workflow</b></summary><ol>
+				<<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> updateDocument_activity_type</li>
+				<li><input type="checkbox" checked> updateDocument</li>
+				<li><input type="checkbox" checked> change PHP</li>				
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+		<li class="iscomplete monstrouse"><details><summary>Activity_type - используется модулями <b>document и workflow</b></summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> updateDocument_activity_type</li>
+				<li><input type="checkbox" checked> updateDocument</li>
+				<li><input type="checkbox" checked> change PHP</li>				
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+		<li class="iscomplete">Work_state используется <b>таблице user</b></li>
+		<li class="iscomplete">ControllerAction - используется в системах логирования и помощи</li>
+		<li class="iscomplete">Controller - используется в системах логирования и помощи</li>
+		<li>DiagType - используется в workflow</li>
+		<li>DiagEvent - используется в workflow для настройки диаграмм</li>
+		<li class="iscomplete"><details><summary>Task_type - используется в workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeTask_Types_onTask</li>
+				<li><input type="checkbox" checked> updateTask_fn</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+
+		<li class="inprogress"><details><summary>Payment_form_type - используется в модулях report, document, workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeRC_Types</li>
+				<li><input type="checkbox" > changeTaskDiParm</li>
+				<li><input type="checkbox" > changeTaskDiParm Constrains</li>
+				<li><input type="checkbox" > updateTask_param</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+
+
+		<li class="inprogress"><details><summary>Original_type - используется модулями document, workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeRC_Types</li>
+				<li><input type="checkbox" > changeTaskDiParm</li>
+				<li><input type="checkbox" > changeTaskDiParm Constrains</li>
+				<li><input type="checkbox" > updateTask_param</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+
+		<li class="inprogress"><details><summary>Storage - используется модулями document, workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeRC_Types</li>
+				<li><input type="checkbox" > changeTaskDiParm</li>
+				<li><input type="checkbox" > changeTaskDiParm Constrains</li>
+				<li><input type="checkbox" > updateTask_param</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+		<li class="inprogress"><details><summary>Contract_type - используется модулями document, workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeRC_Types</li>
+				<li><input type="checkbox" > changeTaskDiParm</li>
+				<li><input type="checkbox" > changeTaskDiParm Constrains</li>
+				<li><input type="checkbox" > updateTask_param</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+		<li class="inprogress"><details><summary>Currency_rate_type - используется модулями document, workflow</summary><ol>
+				<li><input type="checkbox" checked> значеня в Dictonary</li>
+				<li><input type="checkbox" checked> dropConstrains</li>
+				<li><input type="checkbox" checked> changeRC_Types</li>
+				<li><input type="checkbox" > changeTaskDiParm</li>
+				<li><input type="checkbox" > changeTaskDiParm Constrains</li>
+				<li><input type="checkbox" > updateTask_param</li>
+				<li><input type="checkbox" checked> createConstrains</li>
+				<li><input type="checkbox" checked> renameOldTables</li>
+			</ol></details></li>
+	</ol>
+	<p>Вопросы:</p>
+	<ol>
+		<li>В присвоении "<<< XXX" можно использовать например SQL вместо ХХХ, если не против я буду исправлять встречающееся </li>
+		<li>использование XDEBUG</li>
+		<li></li>
+		<li>использование GIT</li>
+		<li>надо переписать все eval</li>
+		<li>обнаружил fn_td_event_*_create_document и поля таблицы task_param использующие пхп код, не могу понять концептуальное решение заставившее написать так</li>
+	</ol>
+	<p><b>Заметки</b></p>
+	<ul class="notes">
+		<li>
+			<b><p>PGSQL stat</p></b>
+			<i><pre>
+	устанвить extension - pg_stat_statements <br/>
+	<b>postgres.conf</b>
+
+		shared_preload_libraries = 'pg_stat_statements'         # (change requires restart)
+		#Track statements generated by stored procedures as well
+		pg_stat_statements.max = 10000
+		pg_stat_statements.track = all
+		# Increase the max size of the query strings Postgres records
+		track_activity_query_size = 2048	#default - 1024
+				</pre></i>
+		<i><pre>
+	<b>SQL example</b>
+		-------------
+		SELECT query, calls, total_time, rows, shared_blks_read, local_blks_read,
+			100.0 * shared_blks_hit / NULLIF(shared_blks_hit + shared_blks_read, 0) AS hit_percent
+		FROM pg_stat_statements
+		ORDER BY total_time DESC
+		LIMIT 10;
+		-------------
+			</pre></i>
+		</li>
+		<li>
+			<b><p>PGSQL log long query</p></b>
+			<pre>
+<b> *   		https://miholeus.com/webdev/logirovanie-v-postgresql.html</b><br/></pre>
+			<i><pre>
+	<b>postgres.conf </b>
+		log_statement_stats = on
+		log_min_duration_statement = 150 	# duration in ms
+		log_line_prefix = '%m %d %u %s %q %c '	#format
+		log_statement = 'ddl'			# also save schema changes
+		log_statement_stats = on
+
+	у нас сохраняется в /var/lib/pgsql/data/pg_log/
+			</pre></i>
+		</li>
+		<li>
+			<b><p>PGSQL dblink</p></b>
+			<pre>
+<b> *		https://stackoverflow.com/questions/6083132/postgresql-insert-into-select </b>
+
+	psql dbtest
+	CREATE TABLE tblB (id serial, time integer);
+	INSERT INTO tblB (time) VALUES (5000), (2000);
+
+	psql postgres
+	CREATE TABLE tblA (id serial, time integer);
+
+	INSERT INTO tblA
+		SELECT id, time
+		FROM dblink('dbname=dbtest', 'SELECT id, time FROM tblB')
+		AS t(id integer, time integer)
+		WHERE time > 1000;
+
+	TABLE tblA;
+	 id | time
+	----+------
+	  1 | 5000
+	  2 | 2000
+	(2 rows)
+
+
+<b> * You can make it as prepared statement if you want and it works as well: </b>
+
+	PREPARE migrate_data (integer) AS
+	INSERT INTO tblA
+		SELECT id, time
+		FROM dblink('dbname=dbtest', 'SELECT id, time FROM tblB')
+		AS t(id integer, time integer)
+		WHERE time > $1;
+
+	EXECUTE migrate_data(1000);
+	-- DEALLOCATE migrate_data;
+
+<b> * If my understanding is correct (postgres has tbla and dbtest has tblb
+		and you want remote insert with local select,
+		not remote select with local insert as above): </b>
+
+	psql dbtest
+
+	SELECT dblink_exec
+	(
+		'dbname=postgres',
+		'INSERT INTO tbla
+			SELECT id, time
+			FROM dblink
+			(
+				''dbname=dbtest'',
+				''SELECT id, time FROM tblb''
+			)
+			AS t(id integer, time integer)
+			WHERE time > 1000;'
+	);
+
+<b> * I don't like that nested dblink, but AFAIK I can't reference
+		to tblB in dblink_exec body. Use LIMIT to specify top 20 rows,
+		but I think you need to sort them using ORDER BY clause first.</b>
+
+			</pre>
+		</li>
+		<li> <b><p>Просмотр настроек PGSQL</p></b>
+			<pre>
+		SELECT *FROM PG_SETTINGS WHERE NAME ILIKE '%log%';
+			</pre> <b><p>часть поля PGSQL</p></b>
+			<pre>
+		select pkey, SPLIT_PART(pkey, 'ONTROLLER|', 2) from dictonary where dictonary_type = 'CONTROLLER';
+			</pre>
+		</li>
+	</ul>
+</div>
